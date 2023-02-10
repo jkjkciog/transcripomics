@@ -29,7 +29,7 @@ print(f'this sequence also has {len(RNA_Seq)} bp')
 
 
 
-# Translation
+# Translations
 mRNA_codons = []
 
 #mRNA_codons = [RNA_Seq[i:i+3] for i in range(0, len(RNA_Seq), 3)]
