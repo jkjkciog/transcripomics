@@ -56,16 +56,46 @@ def find_orf3(sequence):
     return ""
 
 
+def find_orf4(sequence):
+    start = sequence.find("ATG")
+
+    if start > -1:
+        stopTaa = sequence[start:].find("TAA")
+        stopTag = sequence[start:].find("TAG")
+        stopTga = sequence[start:].find("TGA")
+
+        stop = -1
+
+        if stopTaa > -1:
+            stop = stopTaa
+        if stopTag > -1 and stopTag < stop:
+            stop = stopTag
+        if stopTga > -1 and stopTga < stop:
+            stop = stopTga
+
+        if stop > -1:
+            return sequence[start:stop], stop
+
+    return "", 0
+
+
 
 for seq_record in SeqIO.parse("dna.example (1).fasta", "fasta"):
     print("record number",i)
     print(seq_record.id)
     print(repr(seq_record.seq))
     print(len(seq_record))
+
+    stop = 0
+
+
     i=i+1
     if len(seq_record) > highest_record:
         highest_record = len(seq_record) 
-    orf = find_orf(str(seq_record))
+    orf, stop = find_orf4(str(seq_record)[stop:])
+
+    #next seach in loop needs to pass str(seq_record)[stop:]
+
     if len(orf) > 0:
         print("ORF:", orf)
     else:
