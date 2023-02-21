@@ -118,9 +118,5 @@ def translate_dna_to_protein(dna_codons):
 
 translate_dna_to_protein(mRNA_codons)
 
-print("new shit")
-
-
-
 
 
