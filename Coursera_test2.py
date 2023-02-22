@@ -3,6 +3,7 @@ from Bio.Blast import NCBIWWW,NCBIXML
 from Bio.Seq import Seq
 from Bio import SeqIO
 highest_record = 0
+lowest_record = 1e99
 i=0
 
 
@@ -80,7 +81,8 @@ def find_orf4(sequence):
 
 
 
-for seq_record in SeqIO.parse("dna.example (1).fasta", "fasta"):
+for seq_record in SeqIO.parse("dna2.fasta", "fasta"):
+    i=i+1
     print("record number",i)
     print(seq_record.id)
     print(repr(seq_record.seq))
@@ -89,11 +91,15 @@ for seq_record in SeqIO.parse("dna.example (1).fasta", "fasta"):
     stop = 0
 
 
-    i=i+1
+    
     if len(seq_record) > highest_record:
-        highest_record = len(seq_record) 
+        highest_record = len(seq_record)
+        highest_record_num=i
+    if len(seq_record) < lowest_record:
+        lowest_record = len(seq_record)
+        lowest_record_num=i
     orf, stop = find_orf4(str(seq_record)[stop:])
-
+    
     #next seach in loop needs to pass str(seq_record)[stop:]
 
     if len(orf) > 0:
@@ -101,7 +107,8 @@ for seq_record in SeqIO.parse("dna.example (1).fasta", "fasta"):
     else:
         print("No ORF found")
 print(i,"records")
-print("the highest record is",highest_record)
+print("the longest record is number",highest_record_num,highest_record)
+print("the shortest record is", lowest_record_num, lowest_record)
 
 
 
