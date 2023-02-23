@@ -20,6 +20,23 @@ def find_orf(sequence, start_codon="ATG", stop_codons=["TAA", "TAG", "TGA"]):
                     longest_orf = orf
     return longest_orf
 
+
+def find_orf2(sequence):
+    start_codon = "ATG"
+    stop_codons = ["TAA", "TAG", "TGA"]
+    orfs = []
+    for i in range(len(sequence)):
+        if sequence[i:i+3] == start_codon:
+            for j in range(i+3, len(sequence), 3):
+                if sequence[j:j+3] in stop_codons:
+                    orfs.append(sequence[i:j+3])
+                    break
+    return orfs
+
+
+
+
+
 def find_longest_shortest(records):
     """Find the longest and shortest records in the given list of records."""
     longest_record = None
@@ -41,8 +58,9 @@ def main():
         print(f"ID: {record.id}")
         print(f"Sequence: {record.seq}")
         orf = find_orf(str(record.seq))
+        len_orf = len(orf)
         if orf:
-            print(f"ORF: {orf}")
+            print(f"ORF: {orf}", "the length of this orf is:", len_orf)
         else:
             print("No ORF found")
         print()
