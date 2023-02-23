@@ -1,3 +1,6 @@
+import Bio
+from Bio.Blast import NCBIWWW,NCBIXML
+from Bio.Seq import Seq
 from Bio import SeqIO
 
 def find_stop_codon(seq, start, stop_codons):
@@ -64,6 +67,10 @@ def main():
         else:
             print("No ORF found")
         print()
+        #for i in range(3):
+            #orfs = find_orf(record.seq[i:])
+            #print(f"ORFs starting at position {i}:", orfs)
+
 
 if __name__ == "__main__":
     main()
