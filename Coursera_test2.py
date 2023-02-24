@@ -7,7 +7,6 @@ lowest_record = 1e99
 i=0
 
 
-
 def find_orf1(sequence):                            
     start_codon = "ATG"
     stop_codons = ["TAA", "TAG", "TGA"]
