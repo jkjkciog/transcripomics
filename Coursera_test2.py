@@ -2,6 +2,9 @@ import Bio
 from Bio.Blast import NCBIWWW,NCBIXML
 from Bio.Seq import Seq
 from Bio import SeqIO
+import pandas as pd
+import django
+import matplotlib
 highest_record = 0
 lowest_record = 1e99
 i=0
