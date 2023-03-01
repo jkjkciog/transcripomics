@@ -64,6 +64,17 @@ def boyer_moore(p, p_bm, t):
         i += shift
     return occurrences
 
+
+# call the boyer moore function to search for occurrences of the pattern in the chromosome one sequence
+matches = boyer_moore(p, genome)
+
+# print the number of matches and the positions of the matches
+print("There are", len(matches), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
+for m in matches:
+    print(m)
+
+
+
 def z_array(s):
     """ Use Z algorithm (Gusfield theorem 1.4.1) to preprocess s """
     assert len(s) > 1
