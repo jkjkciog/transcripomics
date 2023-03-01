@@ -8,6 +8,37 @@ import unittest
 import pandas as pd
 import matplotlib
 import boyermoore
+# import the regular expression module
+import re
+
+# read in the chromosome one sequence from a FASTA file
+with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
+    f.readline() # skip the first line (header)
+    genome = f.read().replace('\n', '') # concatenate the rest of the lines
+
+# define the pattern to search for
+p = 'GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG'
+
+# define the naive exact matching algorithm
+def naive(p, t):
+    occurrences = []
+    for i in range(len(t) - len(p) + 1):  # loop over alignments
+        match = True
+        for j in range(len(p)):  # loop over characters
+            if t[i+j] != p[j]:  # compare characters
+                match = False
+                break
+        if match:
+            occurrences.append(i)  # all chars matched; record
+    return occurrences
+
+# call the naive function to search for occurrences of the pattern in the chromosome one sequence
+matches = naive(p, genome)
+
+# print the number of matches and the positions of the matches
+print("There are", len(matches), "occurrences of the pattern in chromosome one:")
+for m in matches:
+    print(m)
 
 def boyer_moore(p, p_bm, t):
     """ Do Boyer-Moore matching. p=pattern, t=text,
