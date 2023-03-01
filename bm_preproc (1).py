@@ -38,7 +38,7 @@ def naive(p, t):
 matches = naive(p, genome)
 
 # print the number of matches and the positions of the matches
-print("There are", len(matches), "occurrences of the pattern in chromosome one:")
+print("There are", len(matches), "occurrences of the pattern in chromosome one according to Naive exact matching:")
 for m in matches:
     print(m)
 
