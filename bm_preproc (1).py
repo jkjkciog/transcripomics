@@ -32,11 +32,10 @@ def naive(p, t):
                 break
         if match:
             occurrences.append(i)  # all chars matched; record
-    return occurrences, count 
+    return occurrences, count
 
 # call the naive function to search for occurrences of the pattern in the chromosome one sequence
 matches = naive(p, genome)
-
 # print the number of matches and the positions of the matches
 print("There are", len(matches), "occurrences of the pattern in chromosome one according to Naive exact matching:")
 for m in matches:
