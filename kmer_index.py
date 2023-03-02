@@ -5,7 +5,7 @@
 __author__ = "Ben Langmead"
 
 import bisect
-
+pattern='GGCGCGGTGGCTCACGCCTGTAAT'
 
 class Index(object):
     """ Holds a substring index for a text T """
