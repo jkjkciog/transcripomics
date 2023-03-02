@@ -22,6 +22,7 @@ p = 'GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG'
 # define the naive exact matching algorithm
 def naive(p, t):
     count=0
+    mismatch=0 
     occurrences = []
     for i in range(len(t) - len(p) + 1):  # loop over alignments
         match = True
