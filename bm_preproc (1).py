@@ -74,11 +74,11 @@ def boyer_moore(p, p_bm, t):
 
 
 # call the boyer moore function to search for occurrences of the pattern in the chromosome one sequence
-matches = boyer_moore(p,boyermoore,genome)
+matches2 = boyer_moore(p,boyermoore,genome)
 
 # print the number of matches and the positions of the matches
-print("There are", len(matches), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
-for m in matches:
+print("There are", len(matches2), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
+for m in matches2:
     print(m)
 
 
