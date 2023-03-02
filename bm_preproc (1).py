@@ -51,9 +51,11 @@ for m in matches:
 def boyer_moore(p, p_bm, t):
     """ Do Boyer-Moore matching. p=pattern, t=text,
         p_bm=BoyerMoore object for p """
+    count_align=0
     i = 0
     occurrences = []
     while i < len(t) - len(p) + 1:
+        count_align=+1
         shift = 1
         mismatched = False
         for j in range(len(p)-1, -1, -1):
@@ -68,7 +70,7 @@ def boyer_moore(p, p_bm, t):
             #skip_gs = p_bm.match_skip()
             #shift = max(shift, skip_gs)
         i += shift
-    return occurrences
+    return occurrences, count_align
 
 
 # call the boyer moore function to search for occurrences of the pattern in the chromosome one sequence
