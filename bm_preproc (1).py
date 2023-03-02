@@ -20,27 +20,31 @@ with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
 p = 'GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG'
 
 # define the naive exact matching algorithm
-def naive(p, t):
-    count=0
-    mismatch=0 
-    occurrences = []
-    for i in range(len(t) - len(p) + 1):  # loop over alignments
-        match = True
-        for j in range(len(p)):  # loop over characters
-            count += 1
-            if t[i+j] != p[j]:  # compare characters
-                match = False
-                break
-        if match:
-            occurrences.append(i)  # all chars matched; record
-    return occurrences, count
+#def naive(p, t):
+    #count=0
+    #mismatch=0 
+    #occurrences = []
+    #for i in range(len(t) - len(p) + 1):  # loop over alignments
+        #match = True
+        #for j in range(len(p)):  # loop over characters
+            #count += 1
+            #if t[i+j] != p[j]:  # compare characters
+                #match = False
+                #break
+        #if match:
+            #occurrences.append(i)  # all chars matched; record
+    #return occurrences, count
+
+
+def naive(pattern,genome):
+    return genome.count(pattern)
 
 # call the naive function to search for occurrences of the pattern in the chromosome one sequence
 matches = naive(p, genome)
 # print the number of matches and the positions of the matches
-print("There are", len(matches), "occurrences of the pattern in chromosome one according to Naive exact matching:")
-for m in matches:
-    print(m,"character comparisons")
+print("There are " +str(matches)+ " occurrences of the pattern in chromosome one according to Naive exact matching:")
+#for m in matches:
+    #print(m+"character comparisons")
 
 def boyer_moore(p, p_bm, t):
     """ Do Boyer-Moore matching. p=pattern, t=text,
