@@ -11,76 +11,6 @@ import boyermoore
 # import the regular expression module
 import re
 
-# read in the chromosome one sequence from a FASTA file
-with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
-    f.readline() # skip the first line (header)
-    genome = f.read().replace('\n', '') # concatenate the rest of the lines
-
-# define the pattern to search for
-p = 'GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG'
-
-# define the naive exact matching algorithm
-def naive(p, t):
-    count=0
-    count_align=0
-    mismatch=0 
-    occurrences = []
-    for i in range(len(t) - len(p) + 1):  # loop over alignments
-        count_align+=1
-        match = True
-        for j in range(len(p)):  # loop over characters
-            count += 1
-            if t[i+j] != p[j]:  # compare characters
-                match = False
-                break
-        if match:
-            occurrences.append(i)  # all chars matched; record
-    return occurrences, count, count_align
-
-
-#def naive(pattern,genome):
-    #return genome.count(pattern)
-
-# call the naive function to search for occurrences of the pattern in the chromosome one sequence
-matches = naive(p, genome)
-#print the number of matches and the positions of the matches
-print("There are " +str(matches)+ " occurrences of the pattern in chromosome one according to Naive exact matching:")
-for m in matches:
-    print(m,"character comparisons")
-
-def boyer_moore(p, p_bm, t):
-    """ Do Boyer-Moore matching. p=pattern, t=text,
-        p_bm=BoyerMoore object for p """
-    count_align=0
-    i = 0
-    occurrences = []
-    while i < len(t) - len(p) + 1:
-        count_align=+1
-        shift = 1
-        mismatched = False
-        for j in range(len(p)-1, -1, -1):
-            if p[j] != t[i+j]:
-                skip_bc = p_bm.bad_character_rule(j, t[i+j])
-                skip_gs = p_bm.good_suffix_rule(j)
-                shift = max(shift, skip_bc, skip_gs)
-                mismatched = True
-                break
-        if not mismatched:
-            occurrences.append(i)
-            skip_gs = p_bm.match_skip()
-            shift = max(shift, skip_gs)
-        i += shift
-    return occurrences, count_align
-
-
-# call the boyer moore function to search for occurrences of the pattern in the chromosome one sequence
-matches2 = boyer_moore(p,boyermoore,genome)
-
-# print the number of matches and the positions of the matches
-print("There are", len(matches2), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
-for m in matches2:
-    print(m, "alignments")
-
 
 
 def z_array(s):
@@ -368,5 +298,81 @@ class TestBoyerMoorePreproc(unittest.TestCase):
         self.assertEqual([0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 8], big_l)
         self.assertEqual([11, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1], small_l_prime)
 
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+#    unittest.main()
+
+
+
+# read in the chromosome one sequence from a FASTA file
+with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
+    f.readline() # skip the first line (header)
+    genome = f.read().replace('\n', '') # concatenate the rest of the lines
+
+# define the pattern to search for
+p = 'GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG'
+
+# define the naive exact matching algorithm
+def naive(p, t):
+    count=0
+    count_align=0
+    mismatch=0 
+    occurrences = []
+    for i in range(len(t) - len(p) + 1):  # loop over alignments
+        count_align+=1
+        match = True
+        for j in range(len(p)):  # loop over characters
+            count += 1
+            if t[i+j] != p[j]:  # compare characters
+                match = False
+                break
+        if match:
+            occurrences.append(i)  # all chars matched; record
+    return occurrences, count, count_align
+
+
+#def naive(pattern,genome):
+    #return genome.count(pattern)
+
+# call the naive function to search for occurrences of the pattern in the chromosome one sequence
+matches = naive(p, genome)
+#print the number of matches and the positions of the matches
+print("There are " +str(matches)+ " occurrences of the pattern in chromosome one according to Naive exact matching:")
+for m in matches:
+    print(m,"character comparisons")
+
+def boyer_moore(p, p_bm, t):
+    """ Do Boyer-Moore matching. p=pattern, t=text,
+        p_bm=BoyerMoore object for p """
+    count_align=0
+    i = 0
+    occurrences = []
+    while i < len(t) - len(p) + 1:
+        count_align=+1
+        shift = 1
+        mismatched = False
+        for j in range(len(p)-1, -1, -1):
+            if p[j] != t[i+j]:
+                skip_bc = p_bm.bad_character_rule(j, t[i+j])
+                skip_gs = p_bm.good_suffix_rule(j)
+                shift = max(shift, skip_bc, skip_gs)
+                mismatched = True
+                break
+        if not mismatched:
+            occurrences.append(i)
+            skip_gs = p_bm.match_skip()
+            shift = max(shift, skip_gs)
+        i += shift
+    return occurrences, count_align
+
+
+bm = BoyerMoore(p)
+
+
+# call the boyer moore function to search for occurrences of the pattern in the chromosome one sequence
+matches2 = boyer_moore(p, bm, genome)
+
+# print the number of matches and the positions of the matches
+print("There are", len(matches2), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
+for m in matches2:
+    print(m, "alignments")
+
