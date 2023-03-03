@@ -347,7 +347,7 @@ def boyer_moore(p, p_bm, t):
     i = 0
     occurrences = []
     while i < len(t) - len(p) + 1:
-        count_align=+1
+        count_align+=1
         shift = 1
         mismatched = False
         for j in range(len(p)-1, -1, -1):
