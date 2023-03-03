@@ -7,6 +7,31 @@ __author__ = "Ben Langmead"
 import bisect
 pattern='GGCGCGGTGGCTCACGCCTGTAAT'
 
+
+
+def naive_2mm(p, t):
+    occurrences = []
+    for i in range(len(t) - len(p) + 1):  # loop over alignments
+        mismatch = 0
+        for j in range(len(p)):  # loop over characters
+            if t[i+j] != p[j]:  # compare characters
+                mismatch += 1
+                if mismatch > 2:
+                    break
+        if mismatch <= 2:
+            occurrences.append(i)  # all chars matched; record
+    return occurrences
+
+print(naive_2mm(p, t))  
+print("there are", len(naive_2mm(p, t)), "occurrences")
+
+
+
+
+# read in the chromosome one sequence from a FASTA file
+with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
+    f.readline() # skip the first line (header)
+    genome = f.read().replace('\n', '') # concatenate the rest of the lines
 class Index(object):
     """ Holds a substring index for a text T """
 
