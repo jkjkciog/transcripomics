@@ -60,15 +60,15 @@ def boyer_moore(p, p_bm, t):
         mismatched = False
         for j in range(len(p)-1, -1, -1):
             if p[j] != t[i+j]:
-                #skip_bc = p_bm.bad_character_rule(j, t[i+j])
-                #skip_gs = p_bm.good_suffix_rule(j)
-                #shift = max(shift, skip_bc, skip_gs)
+                skip_bc = p_bm.bad_character_rule(j, t[i+j])
+                skip_gs = p_bm.good_suffix_rule(j)
+                shift = max(shift, skip_bc, skip_gs)
                 mismatched = True
                 break
         if not mismatched:
             occurrences.append(i)
-            #skip_gs = p_bm.match_skip()
-            #shift = max(shift, skip_gs)
+            skip_gs = p_bm.match_skip()
+            shift = max(shift, skip_gs)
         i += shift
     return occurrences, count_align
 
@@ -79,7 +79,7 @@ matches2 = boyer_moore(p,boyermoore,genome)
 # print the number of matches and the positions of the matches
 print("There are", len(matches2), "occurrences of the pattern in chromosome one according to boyer moore exact matching:")
 for m in matches2:
-    print(m)
+    print(m, "alignments")
 
 
 
