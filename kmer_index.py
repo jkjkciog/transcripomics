@@ -32,6 +32,7 @@ print("there are", len(naive_2mm(p, t)), "occurrences")
 with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
     f.readline() # skip the first line (header)
     genome = f.read().replace('\n', '') # concatenate the rest of the lines
+
 class Index(object):
     """ Holds a substring index for a text T """
 
