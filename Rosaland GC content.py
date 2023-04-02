@@ -1,11 +1,18 @@
-with open('Homo_Sapiens_Chrom_1.fasta', 'r') as f:
-    f.readline() # skip the first line (header)
-    genome = f.read().replace('\n', '') # concatenate the rest of the lines
+with open('rosalind_gc.txt', 'r') as f:
+    seq = ''
+    for line in f:
+        if line.startswith('>'):  # if line is a header
+            if seq:  # if a sequence has been read
+                gc_content = (seq.count('G') + seq.count('C')) / len(seq) * 100
+                print(f'GC content of {header}: {gc_content:.2f}%')
+                seq = ''  # reset sequence
+            header = line.strip()[1:]  # remove ">" and newline characters
+        else:
+            seq += line.strip()
 
-    GC_base=0
-for i in range(len(genome)):
-    if 'G' or 'C' in genome:
-        GC_base+=1
-    else:
-        continue
-print(GC_base)
+    # process the last sequence
+    gc_content = (seq.count('G') + seq.count('C')) / len(seq) * 100
+    print(f'GC content of {header}: {gc_content:.2f}%')
+
+
+
