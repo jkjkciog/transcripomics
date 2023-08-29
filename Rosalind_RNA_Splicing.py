@@ -43,13 +43,13 @@ def DNA_To_RNA(DNA_seq):
     RNA_Seq=[]
     for element in DNA_Seq:
         if element == 'A':
-            RNA_Seq.append('U')
-        elif element == 'T':
             RNA_Seq.append('A')
+        elif element == 'T':
+            RNA_Seq.append('U')
         elif element == 'G':
-            RNA_Seq.append('C')
-        elif element == 'C':
             RNA_Seq.append('G')
+        elif element == 'C':
+            RNA_Seq.append('C')
     RNA_Seq=''.join(RNA_Seq)
     return RNA_Seq
 
