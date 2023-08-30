@@ -17,7 +17,7 @@ def readGenome(filename):
 
     return genome, introns
 
-genome, introns = readGenome('RNA_SPLICING_TEST_FILE.fa')
+genome, introns = readGenome('rosalind_splc.fa.txt')
 
 print("Genome:", genome)
 print("Introns:", introns)
