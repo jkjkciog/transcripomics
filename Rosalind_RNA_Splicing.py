@@ -10,7 +10,7 @@ def readGenome(filename):
             line = line.rstrip()  # Remove trailing newline character
             if not line.startswith('>'):  # Check if line is a header line
                 if is_first_read:
-                    genome = line
+                    genome += line
                     is_first_read=False
                 else:
                     introns.append(line)
@@ -29,7 +29,7 @@ print("Introns:", introns)
 def remove_introns(genome, introns):
     for intron in introns:
         if intron in genome:
-            genome = genome.replace(intron, "")
+            genome = genome.replace(intron, "",1)
     return genome
 
 
