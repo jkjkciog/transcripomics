@@ -10,14 +10,14 @@ def readGenome(filename):
             line = line.rstrip()  # Remove trailing newline character
             if not line.startswith('>'):  # Check if line is a header line
                 if is_first_read:
-                    genome += line
+                    genome = line
                     is_first_read=False
                 else:
                     introns.append(line)
 
     return genome, introns
 
-genome, introns = readGenome('rosalind_splc.fa.txt')
+genome, introns = readGenome('Rosalind_splc.fa.txt')
 
 print("Genome:", genome)
 print("Introns:", introns)
