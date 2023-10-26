@@ -1,19 +1,24 @@
-# %%
-"RNA Splicing"
 def readGenome(filename):
     genome = ''
     introns = []
+    current_sequence = ''
 
     with open(filename, 'r') as f:
-        is_first_read = True
         for line in f:
             line = line.rstrip()  # Remove trailing newline character
-            if not line.startswith('>'):  # Check if line is a header line
-                if is_first_read:
-                    genome += line
-                    is_first_read=False
-                else:
-                    introns.append(line)
+            
+            if line.startswith('>'):
+                if genome == '':  # If genome is not set yet
+                    genome = current_sequence
+                elif current_sequence != '':  # Otherwise, if there's any sequence collected
+                    introns.append(current_sequence)
+                current_sequence = ''  # Reset the sequence collector
+            else:
+                current_sequence += line
+
+        # After the loop ends, check if there's any sequence left
+        if current_sequence:
+            introns.append(current_sequence)
 
     return genome, introns
 
@@ -21,6 +26,7 @@ genome, introns = readGenome('Rosalind_splc.fa.txt')
 
 print("Genome:", genome)
 print("Introns:", introns)
+
 
 
 
