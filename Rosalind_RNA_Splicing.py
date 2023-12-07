@@ -22,7 +22,7 @@ def readGenome(filename):
 
     return genome, introns
 
-genome, introns = readGenome('Rosalind_splc.fa.txt')
+genome, introns = readGenome('Rosalind_splc.txt')
 
 print("Genome:", genome)
 print("Introns:", introns)
