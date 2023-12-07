@@ -23,7 +23,7 @@ print(X.head())
 Y = df['outcome']
 print(Y.head())
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state=0)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state=4)
 print("X_train.shape = ", X_train.shape)
 print("Y_train.shape = ", Y_train.shape)
 print("X_test.shape = ", X_test.shape)
@@ -36,3 +36,23 @@ scaler = StandardScaler()
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)
 print(X_train[:5,:])
+scaler.fit(X_test)
+X_test = scaler.transform(X_test)
+
+#train model
+clf = svm.SVC(kernel='linear')
+print(clf.fit(X_train, Y_train))
+
+#Decision accuracy
+y_prediction = clf.predict(X_test)
+Y_train_prediction = clf.predict(X_train)
+print("Accuracy Score = ", accuracy_score(Y_test, y_prediction))
+print(y_prediction)
+y_ac = accuracy_score(Y_train, Y_train_prediction)
+
+#Compairing different models
+for k in ('linear', 'poly', 'rbf', 'sigmoid'):
+    clf = svm.SVC(kernel=k)
+    clf.fit(X_train, Y_train)
+    y_prediction = clf.predict(X_test)
+    print("Accuracy Score for ", k, " = ", accuracy_score(Y_test, y_prediction))
