@@ -20,5 +20,19 @@ print(df.head())
 X=df.iloc[:,0:8]
 print(X.head())
 
-Y=df.iloc['class']
+Y = df['outcome']
 print(Y.head())
+
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, random_state=0)
+print("X_train.shape = ", X_train.shape)
+print("Y_train.shape = ", Y_train.shape)
+print("X_test.shape = ", X_test.shape)
+print("Y_test.shape = ", Y_test.shape)
+
+print(X_test.head())
+
+#normailze features X
+scaler = StandardScaler()
+scaler.fit(X_train)
+X_train = scaler.transform(X_train)
+print(X_train[:5,:])
