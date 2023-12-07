@@ -56,3 +56,16 @@ for k in ('linear', 'poly', 'rbf', 'sigmoid'):
     clf.fit(X_train, Y_train)
     y_prediction = clf.predict(X_test)
     print("Accuracy Score for ", k, " = ", accuracy_score(Y_test, y_prediction))
+
+#set chosen kernel
+clf = svm.SVC(kernel='rbf')
+clf.fit(X_train, Y_train)
+#paitent = np.array([1,100,75,40,0,45,1.5,200,])
+#paitent = scaler.transform(paitent)
+#clf.predict(paitent)
+#X_test = scaler.transform(X_test)
+
+
+#Test on patients
+patient = np.array([X_test[3],])
+print(clf.predict(patient))
