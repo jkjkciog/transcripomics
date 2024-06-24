@@ -1,9 +1,5 @@
-# Adjusting the code to make spikes face outward and perpendicular to the legs
 import numpy as np
 import matplotlib.pyplot as plt
-plt.savefig('C:\\Users\\jaan\\OneDrive\\Pictures\\Saved Pictures\\red_rhombus.png', bbox_inches='tight', pad_inches=0, dpi=100, facecolor='black')
-ax = plt.gca()
-ax.set_facecolor('black') # Ensure the background is black
 
 # Re-defining the coordinates of the rhombus
 x = np.array([0, 1, 0, -1, 0])
@@ -15,8 +11,15 @@ slope_legs = np.diff(y) / np.diff(x)
 # Handling infinite slope (vertical lines)
 slope_legs = np.append(slope_legs, -1/slope_legs[1])  # Use the reciprocal of the slope for perpendicular direction
 
+# Creating the figure and axis
+fig, ax = plt.subplots()
+
+# Setting the background color to black
+fig.patch.set_facecolor('black')
+ax.set_facecolor('black')
+
 # Plotting the rhombus
-plt.plot(x, y, 'r-', linewidth=5) # 'r-' for red line
+ax.plot(x, y, 'r-', linewidth=5)  # 'r-' for red line
 
 # Adding spikes: they should be perpendicular, so we'll adjust directions accordingly
 for i in range(4):
@@ -32,10 +35,12 @@ for i in range(4):
     for dir_vector in spike_direction:
         spike_end_x = mx + dir_vector[0]
         spike_end_y = my + dir_vector[1]
-        plt.plot([mx, spike_end_x], [my, spike_end_y], 'r-', linewidth=5)
+        ax.plot([mx, spike_end_x], [my, spike_end_y], 'r-', linewidth=5)
 
-plt.axis('equal')
-plt.axis('off')
-plt.gca().set_facecolor('black')
-plt.savefig('C:/Users/jaan/OneDrive/Pictures/Saved Pictures/red_rhombus.png', facecolor=plt.gcf().get_facecolor(), bbox_inches='tight', pad_inches=0, dpi=100)
+# Removing axes
+ax.axis('equal')
+ax.axis('off')
+
+# Saving the figure with the correct facecolor and bbox_inches settings
+plt.savefig('C:/Users/jaan/OneDrive/Pictures/Saved Pictures/red_rhombus.png', facecolor=fig.get_facecolor(), bbox_inches='tight', pad_inches=0, dpi=100)
 plt.show()
