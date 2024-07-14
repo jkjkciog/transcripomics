@@ -1,0 +1,2457 @@
+{
+    "query_fasta": ">tr|G4VGF5|G4VGF5_SCHMA\nMCSHYAQRNNFSCGGYGFIDFVSEDAANEALQQIKETHPSFTIKFAKENEKDKTNLYVTN\nLPRTWTTKDSDQLKAVFERFGHIQSAFVMMERLTNKTTGVGFVRFVNEQDAVNALESLKL\nHPLTLPDCSVPVEAKFADKHNPDTRRRRYPVTATTAAAAAAAAAAAAASATMIANVNYNN\nLLNCPLYTAPNGLTLTSHDALASLLNTGLVSPSIVNSQLANFSALQQKSTTDFTSRFNSE\n",
+    "funfam_scan": {
+        "include_hsp_strings": "1",
+        "results": [
+            {
+                "query_name": "tr|G4VGF5|G4VGF5_SCHMA",
+                "hits": [
+                    {
+                        "match_name": "3.30.70.330-FF-000205",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Sex lethal, isoform B",
+                        "significance": 3e-17,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "165",
+                            "go_term_count": null,
+                            "rep_id": "4qqbB02",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 205,
+                        "match_id": "3.30.70.330/FF/205",
+                        "hsps": [
+                            {
+                                "query_end": 49,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.27,
+                                "score": 8.9,
+                                "frac_conserved": 0.66,
+                                "length": 41,
+                                "evalue": 0.034,
+                                "hit_start": 47,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 87
+                            },
+                            {
+                                "query_end": 140,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 60.3,
+                                "frac_conserved": 0.75,
+                                "length": 88,
+                                "evalue": 3.1e-18,
+                                "hit_start": 5,
+                                "query_start": 53,
+                                "rank": 2,
+                                "hit_end": 87
+                            }
+                        ],
+                        "rank": 1
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001043",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding protein, putative",
+                        "significance": 4.1e-14,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "9",
+                            "go_term_count": null,
+                            "rep_id": "Q584Y8/3-80",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1043,
+                        "match_id": "3.30.70.330/FF/1043",
+                        "hsps": [
+                            {
+                                "query_end": 38,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 8.9,
+                                "frac_conserved": 0.83,
+                                "length": 24,
+                                "evalue": 0.047,
+                                "hit_start": 44,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 67
+                            },
+                            {
+                                "query_end": 125,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.38,
+                                "score": 52.4,
+                                "frac_conserved": 0.68,
+                                "length": 73,
+                                "evalue": 1.3e-15,
+                                "hit_start": 2,
+                                "query_start": 53,
+                                "rank": 2,
+                                "hit_end": 70
+                            }
+                        ],
+                        "rank": 2
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000651",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Poly(A) binding protein cytoplasmic 1 like",
+                        "significance": 8e-14,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "19",
+                            "go_term_count": null,
+                            "rep_id": "Q3V2M1/93-178",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 651,
+                        "match_id": "3.30.70.330/FF/651",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.27,
+                                "score": 10.3,
+                                "frac_conserved": 0.82,
+                                "length": 22,
+                                "evalue": 0.013,
+                                "hit_start": 50,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 71
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 47.4,
+                                "frac_conserved": 0.75,
+                                "length": 71,
+                                "evalue": 3.3e-14,
+                                "hit_start": 3,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 69
+                            }
+                        ],
+                        "rank": 3
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000013",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "CUGBP Elav-like family member 1 isoform 2",
+                        "significance": 2.5e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1128",
+                            "go_term_count": null,
+                            "rep_id": "3nnhD00",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 13,
+                        "match_id": "3.30.70.330/FF/13",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.28,
+                                "score": 5.8,
+                                "frac_conserved": 0.72,
+                                "length": 25,
+                                "evalue": 0.4,
+                                "hit_start": 53,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 77
+                            },
+                            {
+                                "query_end": 140,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 50.7,
+                                "frac_conserved": 0.69,
+                                "length": 95,
+                                "evalue": 3.8e-15,
+                                "hit_start": 5,
+                                "query_start": 46,
+                                "rank": 2,
+                                "hit_end": 95
+                            }
+                        ],
+                        "rank": 4
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000480",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Fne, isoform A",
+                        "significance": 4.8e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "31",
+                            "go_term_count": null,
+                            "rep_id": "Q9VYI0/9-120",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 480,
+                        "match_id": "3.30.70.330/FF/480",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.26,
+                                "score": 10.4,
+                                "frac_conserved": 0.87,
+                                "length": 23,
+                                "evalue": 0.014,
+                                "hit_start": 59,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 81
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 45.6,
+                                "frac_conserved": 0.73,
+                                "length": 73,
+                                "evalue": 1.4e-13,
+                                "hit_start": 11,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 80
+                            }
+                        ],
+                        "rank": 5
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000012",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding motif, single-stranded-interacting protein 3 isoform 1",
+                        "significance": 5.3e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1132",
+                            "go_term_count": null,
+                            "rep_id": "1x4eA00",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 12,
+                        "match_id": "3.30.70.330/FF/12",
+                        "hsps": [
+                            {
+                                "query_end": 52,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 23,
+                                "frac_conserved": 0.76,
+                                "length": 45,
+                                "evalue": 1.4e-06,
+                                "hit_start": 40,
+                                "query_start": 8,
+                                "rank": 1,
+                                "hit_end": 82
+                            },
+                            {
+                                "query_end": 120,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 37.5,
+                                "frac_conserved": 0.67,
+                                "length": 69,
+                                "evalue": 4.2e-11,
+                                "hit_start": 3,
+                                "query_start": 52,
+                                "rank": 2,
+                                "hit_end": 68
+                            }
+                        ],
+                        "rank": 6
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001470",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding protein-like protein",
+                        "significance": 6.1e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "4",
+                            "go_term_count": null,
+                            "rep_id": "Q582F3/182-305",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1470,
+                        "match_id": "3.30.70.330/FF/1470",
+                        "hsps": [
+                            {
+                                "query_end": 48,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.28,
+                                "score": 8.3,
+                                "frac_conserved": 0.67,
+                                "length": 43,
+                                "evalue": 0.046,
+                                "hit_start": 83,
+                                "query_start": 9,
+                                "rank": 1,
+                                "hit_end": 124
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.39,
+                                "score": 48,
+                                "frac_conserved": 0.68,
+                                "length": 69,
+                                "evalue": 2.5e-14,
+                                "hit_start": 43,
+                                "query_start": 51,
+                                "rank": 2,
+                                "hit_end": 108
+                            }
+                        ],
+                        "rank": 7
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000100",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Putative ribonucleoprotein PTB-binding 1",
+                        "significance": 7.2e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "321",
+                            "go_term_count": null,
+                            "rep_id": "3vf0B01",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 100,
+                        "match_id": "3.30.70.330/FF/100",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 10,
+                                "frac_conserved": 0.77,
+                                "length": 22,
+                                "evalue": 0.016,
+                                "hit_start": 56,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 77
+                            },
+                            {
+                                "query_end": 120,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.25,
+                                "score": 44.9,
+                                "frac_conserved": 0.77,
+                                "length": 71,
+                                "evalue": 2.1e-13,
+                                "hit_start": 11,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 78
+                            }
+                        ],
+                        "rank": 8
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000500",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 7.8e-13,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "29",
+                            "go_term_count": null,
+                            "rep_id": "O04319/197-300",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 500,
+                        "match_id": "3.30.70.330/FF/500",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.2,
+                                "score": 12.2,
+                                "frac_conserved": 0.77,
+                                "length": 30,
+                                "evalue": 0.0041,
+                                "hit_start": 42,
+                                "query_start": 6,
+                                "rank": 1,
+                                "hit_end": 71
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 42.8,
+                                "frac_conserved": 0.67,
+                                "length": 73,
+                                "evalue": 1.1e-12,
+                                "hit_start": 3,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 71
+                            }
+                        ],
+                        "rank": 9
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000520",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 1.7e-12,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "27",
+                            "go_term_count": null,
+                            "rep_id": "P04147/208-306",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 520,
+                        "match_id": "3.30.70.330/FF/520",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.29,
+                                "score": 8.2,
+                                "frac_conserved": 0.83,
+                                "length": 24,
+                                "evalue": 0.097,
+                                "hit_start": 50,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 73
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.4,
+                                "score": 46.4,
+                                "frac_conserved": 0.74,
+                                "length": 73,
+                                "evalue": 1.2e-13,
+                                "hit_start": 3,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 71
+                            }
+                        ],
+                        "rank": 10
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000450",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA binding motif, single stranded interacting protein 1a",
+                        "significance": 2.2e-12,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "35",
+                            "go_term_count": null,
+                            "rep_id": "A0A3P9LA91/7-107",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 450,
+                        "match_id": "3.30.70.330/FF/450",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.48,
+                                "score": 13.2,
+                                "frac_conserved": 0.64,
+                                "length": 25,
+                                "evalue": 0.0018,
+                                "hit_start": 75,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 99
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.41,
+                                "score": 38.6,
+                                "frac_conserved": 0.67,
+                                "length": 69,
+                                "evalue": 2.2e-11,
+                                "hit_start": 33,
+                                "query_start": 51,
+                                "rank": 2,
+                                "hit_end": 98
+                            }
+                        ],
+                        "rank": 11
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001700",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "",
+                        "significance": 5.2e-12,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "3",
+                            "go_term_count": null,
+                            "rep_id": "Q54G90/193-306",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1700,
+                        "match_id": "3.30.70.330/FF/1700",
+                        "hsps": [
+                            {
+                                "query_end": 53,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.23,
+                                "score": 8.2,
+                                "frac_conserved": 0.67,
+                                "length": 43,
+                                "evalue": 0.074,
+                                "hit_start": 56,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 98
+                            },
+                            {
+                                "query_end": 141,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.26,
+                                "score": 46.7,
+                                "frac_conserved": 0.65,
+                                "length": 94,
+                                "evalue": 7.2e-14,
+                                "hit_start": 9,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 95
+                            }
+                        ],
+                        "rank": 12
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000501",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Os04g0682400 protein",
+                        "significance": 1e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "29",
+                            "go_term_count": null,
+                            "rep_id": "A0A0P0WGS4/471-583",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 501,
+                        "match_id": "3.30.70.330/FF/501",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.27,
+                                "score": 9.9,
+                                "frac_conserved": 0.65,
+                                "length": 26,
+                                "evalue": 0.017,
+                                "hit_start": 67,
+                                "query_start": 9,
+                                "rank": 1,
+                                "hit_end": 92
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.35,
+                                "score": 41.8,
+                                "frac_conserved": 0.64,
+                                "length": 81,
+                                "evalue": 2.2e-12,
+                                "hit_start": 16,
+                                "query_start": 38,
+                                "rank": 2,
+                                "hit_end": 92
+                            }
+                        ],
+                        "rank": 13
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000649",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 1.1e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "19",
+                            "go_term_count": null,
+                            "rep_id": "Q9U302/201-297",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 649,
+                        "match_id": "3.30.70.330/FF/649",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.24,
+                                "score": 9.5,
+                                "frac_conserved": 0.76,
+                                "length": 25,
+                                "evalue": 0.028,
+                                "hit_start": 52,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 76
+                            },
+                            {
+                                "query_end": 124,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.35,
+                                "score": 42.2,
+                                "frac_conserved": 0.71,
+                                "length": 77,
+                                "evalue": 1.8e-12,
+                                "hit_start": 7,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 79
+                            }
+                        ],
+                        "rank": 14
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000005",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "ELAV-like protein",
+                        "significance": 1.3e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1479",
+                            "go_term_count": null,
+                            "rep_id": "4ed5B02",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 5,
+                        "match_id": "3.30.70.330/FF/5",
+                        "hsps": [
+                            {
+                                "query_end": 48,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 5.9,
+                                "frac_conserved": 0.62,
+                                "length": 39,
+                                "evalue": 0.39,
+                                "hit_start": 43,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 81
+                            },
+                            {
+                                "query_end": 139,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 45.2,
+                                "frac_conserved": 0.68,
+                                "length": 85,
+                                "evalue": 2.1e-13,
+                                "hit_start": 2,
+                                "query_start": 55,
+                                "rank": 2,
+                                "hit_end": 81
+                            }
+                        ],
+                        "rank": 15
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000932",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Chromosome 1, whole genome shotgun sequence",
+                        "significance": 2e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "11",
+                            "go_term_count": null,
+                            "rep_id": "A0A0D1E8G7/3-141",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 932,
+                        "match_id": "3.30.70.330/FF/932",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.22,
+                                "score": 2.1,
+                                "frac_conserved": 0.65,
+                                "length": 23,
+                                "evalue": 5.7,
+                                "hit_start": 57,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 79
+                            },
+                            {
+                                "query_end": 147,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 48.3,
+                                "frac_conserved": 0.63,
+                                "length": 103,
+                                "evalue": 2.4e-14,
+                                "hit_start": 8,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 105
+                            }
+                        ],
+                        "rank": 16
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000239",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 4.4e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "129",
+                            "go_term_count": null,
+                            "rep_id": "P42731/200-303",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 239,
+                        "match_id": "3.30.70.330/FF/239",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.29,
+                                "score": 6.9,
+                                "frac_conserved": 0.86,
+                                "length": 21,
+                                "evalue": 0.21,
+                                "hit_start": 52,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 72
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 42.7,
+                                "frac_conserved": 0.68,
+                                "length": 71,
+                                "evalue": 1.5e-12,
+                                "hit_start": 6,
+                                "query_start": 49,
+                                "rank": 2,
+                                "hit_end": 72
+                            }
+                        ],
+                        "rank": 17
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000383",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Sex lethal, isoform D",
+                        "significance": 4.4e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "60",
+                            "go_term_count": null,
+                            "rep_id": "4qqbB01",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 383,
+                        "match_id": "3.30.70.330/FF/383",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.35,
+                                "score": 10.3,
+                                "frac_conserved": 0.81,
+                                "length": 26,
+                                "evalue": 0.016,
+                                "hit_start": 55,
+                                "query_start": 9,
+                                "rank": 1,
+                                "hit_end": 79
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 39.4,
+                                "frac_conserved": 0.67,
+                                "length": 72,
+                                "evalue": 1.4e-11,
+                                "hit_start": 11,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 79
+                            }
+                        ],
+                        "rank": 18
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000778",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding protein-like protein",
+                        "significance": 5.7e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "15",
+                            "go_term_count": null,
+                            "rep_id": "Q57UT5/127-239",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 778,
+                        "match_id": "3.30.70.330/FF/778",
+                        "hsps": [
+                            {
+                                "query_end": 33,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 5.1,
+                                "frac_conserved": 0.64,
+                                "length": 22,
+                                "evalue": 0.49,
+                                "hit_start": 48,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 69
+                            },
+                            {
+                                "query_end": 146,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.25,
+                                "score": 43.9,
+                                "frac_conserved": 0.67,
+                                "length": 97,
+                                "evalue": 4.5e-13,
+                                "hit_start": 6,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 96
+                            }
+                        ],
+                        "rank": 19
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000359",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "CUGBP Elav-like family member 2",
+                        "significance": 7.5e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "57",
+                            "go_term_count": null,
+                            "rep_id": "Q8IDB7/175-272",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 359,
+                        "match_id": "3.30.70.330/FF/359",
+                        "hsps": [
+                            {
+                                "query_end": 141,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.29,
+                                "score": 48.6,
+                                "frac_conserved": 0.68,
+                                "length": 94,
+                                "evalue": 1.9e-14,
+                                "hit_start": 4,
+                                "query_start": 48,
+                                "rank": 1,
+                                "hit_end": 92
+                            }
+                        ],
+                        "rank": 20
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000684",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Putative glycine-rich RNA-binding protein",
+                        "significance": 8.5e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "17",
+                            "go_term_count": null,
+                            "rep_id": "V5IQV9/1-100",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 684,
+                        "match_id": "3.30.70.330/FF/684",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 7.9,
+                                "frac_conserved": 0.73,
+                                "length": 26,
+                                "evalue": 0.11,
+                                "hit_start": 41,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 66
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.44,
+                                "score": 41.6,
+                                "frac_conserved": 0.76,
+                                "length": 55,
+                                "evalue": 3.7e-12,
+                                "hit_start": 10,
+                                "query_start": 64,
+                                "rank": 2,
+                                "hit_end": 63
+                            }
+                        ],
+                        "rank": 21
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000634",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Related to glycine-rich RNA-binding protein",
+                        "significance": 8.9e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "19",
+                            "go_term_count": null,
+                            "rep_id": "E3KXQ4/20-142",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 634,
+                        "match_id": "3.30.70.330/FF/634",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.38,
+                                "score": 7.4,
+                                "frac_conserved": 0.75,
+                                "length": 24,
+                                "evalue": 0.14,
+                                "hit_start": 44,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 67
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 41.1,
+                                "frac_conserved": 0.68,
+                                "length": 66,
+                                "evalue": 4.5e-12,
+                                "hit_start": 4,
+                                "query_start": 54,
+                                "rank": 2,
+                                "hit_end": 66
+                            }
+                        ],
+                        "rank": 22
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000080",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding protein 39 isoform X1",
+                        "significance": 9.9e-11,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "367",
+                            "go_term_count": null,
+                            "rep_id": "2jrsA01",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 80,
+                        "match_id": "3.30.70.330/FF/80",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.45,
+                                "score": 11.7,
+                                "frac_conserved": 0.64,
+                                "length": 22,
+                                "evalue": 0.0058,
+                                "hit_start": 60,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 81
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 36.9,
+                                "frac_conserved": 0.62,
+                                "length": 72,
+                                "evalue": 9e-11,
+                                "hit_start": 13,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 81
+                            }
+                        ],
+                        "rank": 23
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000819",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 1.2e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "14",
+                            "go_term_count": null,
+                            "rep_id": "Q9UT83/397-509",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 819,
+                        "match_id": "3.30.70.330/FF/819",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 8.1,
+                                "frac_conserved": 0.64,
+                                "length": 25,
+                                "evalue": 0.064,
+                                "hit_start": 50,
+                                "query_start": 10,
+                                "rank": 1,
+                                "hit_end": 74
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 40.4,
+                                "frac_conserved": 0.67,
+                                "length": 67,
+                                "evalue": 5.9e-12,
+                                "hit_start": 12,
+                                "query_start": 52,
+                                "rank": 2,
+                                "hit_end": 74
+                            }
+                        ],
+                        "rank": 24
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000590",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein 5",
+                        "significance": 1.4e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "22",
+                            "go_term_count": null,
+                            "rep_id": "Q05196/221-329",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 590,
+                        "match_id": "3.30.70.330/FF/590",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.25,
+                                "score": 9.3,
+                                "frac_conserved": 0.92,
+                                "length": 24,
+                                "evalue": 0.041,
+                                "hit_start": 48,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 71
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.38,
+                                "score": 39,
+                                "frac_conserved": 0.69,
+                                "length": 68,
+                                "evalue": 2.1e-11,
+                                "hit_start": 6,
+                                "query_start": 52,
+                                "rank": 2,
+                                "hit_end": 69
+                            }
+                        ],
+                        "rank": 25
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000766",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "CUGBP Elav family member 6",
+                        "significance": 1.7e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "15",
+                            "go_term_count": null,
+                            "rep_id": "Q54EJ3/88-181",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 766,
+                        "match_id": "3.30.70.330/FF/766",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.21,
+                                "score": 2.6,
+                                "frac_conserved": 0.58,
+                                "length": 24,
+                                "evalue": 3.6,
+                                "hit_start": 45,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 68
+                            },
+                            {
+                                "query_end": 147,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.27,
+                                "score": 44.9,
+                                "frac_conserved": 0.65,
+                                "length": 95,
+                                "evalue": 2.3e-13,
+                                "hit_start": 4,
+                                "query_start": 53,
+                                "rank": 2,
+                                "hit_end": 94
+                            }
+                        ],
+                        "rank": 26
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000017",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "ELAV-like protein",
+                        "significance": 2.3e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "963",
+                            "go_term_count": null,
+                            "rep_id": "1d8zA00",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 17,
+                        "match_id": "3.30.70.330/FF/17",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.35,
+                                "score": 6.4,
+                                "frac_conserved": 0.85,
+                                "length": 20,
+                                "evalue": 0.21,
+                                "hit_start": 64,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 83
+                            },
+                            {
+                                "query_end": 120,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 41,
+                                "frac_conserved": 0.72,
+                                "length": 81,
+                                "evalue": 3.6e-12,
+                                "hit_start": 11,
+                                "query_start": 43,
+                                "rank": 2,
+                                "hit_end": 88
+                            }
+                        ],
+                        "rank": 27
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000010",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "CUGBP Elav-like family member 4 isoform 3",
+                        "significance": 2.6e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1172",
+                            "go_term_count": null,
+                            "rep_id": "2dgqA00",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 10,
+                        "match_id": "3.30.70.330/FF/10",
+                        "hsps": [
+                            {
+                                "query_end": 141,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 46.5,
+                                "frac_conserved": 0.71,
+                                "length": 94,
+                                "evalue": 6.4e-14,
+                                "hit_start": 5,
+                                "query_start": 48,
+                                "rank": 1,
+                                "hit_end": 94
+                            }
+                        ],
+                        "rank": 28
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000564",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 3.1e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "23",
+                            "go_term_count": null,
+                            "rep_id": "O22173/133-221",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 564,
+                        "match_id": "3.30.70.330/FF/564",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 13.8,
+                                "frac_conserved": 0.84,
+                                "length": 25,
+                                "evalue": 0.0012,
+                                "hit_start": 39,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 63
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 32.8,
+                                "frac_conserved": 0.68,
+                                "length": 65,
+                                "evalue": 1.5e-09,
+                                "hit_start": 1,
+                                "query_start": 55,
+                                "rank": 2,
+                                "hit_end": 61
+                            }
+                        ],
+                        "rank": 29
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000406",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Related to Nucleolar protein NOP4",
+                        "significance": 3.2e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "46",
+                            "go_term_count": null,
+                            "rep_id": "O74400/266-395",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 406,
+                        "match_id": "3.30.70.330/FF/406",
+                        "hsps": [
+                            {
+                                "query_end": 38,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.38,
+                                "score": 6,
+                                "frac_conserved": 0.83,
+                                "length": 24,
+                                "evalue": 0.33,
+                                "hit_start": 54,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 77
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 41.9,
+                                "frac_conserved": 0.74,
+                                "length": 73,
+                                "evalue": 2.8e-12,
+                                "hit_start": 5,
+                                "query_start": 47,
+                                "rank": 2,
+                                "hit_end": 74
+                            }
+                        ],
+                        "rank": 30
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000315",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding motif protein 28",
+                        "significance": 3.3e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "77",
+                            "go_term_count": null,
+                            "rep_id": "O74400/1-88",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 315,
+                        "match_id": "3.30.70.330/FF/315",
+                        "hsps": [
+                            {
+                                "query_end": 52,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.22,
+                                "score": 14.4,
+                                "frac_conserved": 0.67,
+                                "length": 45,
+                                "evalue": 0.00075,
+                                "hit_start": 39,
+                                "query_start": 9,
+                                "rank": 1,
+                                "hit_end": 83
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 32.5,
+                                "frac_conserved": 0.63,
+                                "length": 65,
+                                "evalue": 1.6e-09,
+                                "hit_start": 4,
+                                "query_start": 55,
+                                "rank": 2,
+                                "hit_end": 65
+                            }
+                        ],
+                        "rank": 31
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000704",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Ribosome biogenesis (Nop4)",
+                        "significance": 4.5e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "17",
+                            "go_term_count": null,
+                            "rep_id": "P37838/3-106",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 704,
+                        "match_id": "3.30.70.330/FF/704",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 14.9,
+                                "frac_conserved": 0.75,
+                                "length": 28,
+                                "evalue": 0.00043,
+                                "hit_start": 67,
+                                "query_start": 10,
+                                "rank": 1,
+                                "hit_end": 94
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 31.7,
+                                "frac_conserved": 0.62,
+                                "length": 72,
+                                "evalue": 2.6e-09,
+                                "hit_start": 24,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 92
+                            }
+                        ],
+                        "rank": 32
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000621",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Nuclear localization sequence-binding protein",
+                        "significance": 4.9e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "20",
+                            "go_term_count": null,
+                            "rep_id": "P27476/93-255",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 621,
+                        "match_id": "3.30.70.330/FF/621",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 10.2,
+                                "frac_conserved": 0.79,
+                                "length": 24,
+                                "evalue": 0.013,
+                                "hit_start": 114,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 137
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 41.3,
+                                "frac_conserved": 0.68,
+                                "length": 73,
+                                "evalue": 3.6e-12,
+                                "hit_start": 66,
+                                "query_start": 46,
+                                "rank": 2,
+                                "hit_end": 135
+                            }
+                        ],
+                        "rank": 33
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000714",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Glycine-rich RNA-binding protein 2, mitochondrial",
+                        "significance": 5.5e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "16",
+                            "go_term_count": null,
+                            "rep_id": "B7F8B0/20-116",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 714,
+                        "match_id": "3.30.70.330/FF/714",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.48,
+                                "score": 15.6,
+                                "frac_conserved": 0.83,
+                                "length": 23,
+                                "evalue": 0.00028,
+                                "hit_start": 57,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 79
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.3,
+                                "score": 32.2,
+                                "frac_conserved": 0.66,
+                                "length": 71,
+                                "evalue": 1.9e-09,
+                                "hit_start": 10,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 77
+                            }
+                        ],
+                        "rank": 34
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000468",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Related to single-stranded DNA-binding protein MSSP-1",
+                        "significance": 6.9e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "32",
+                            "go_term_count": null,
+                            "rep_id": "Q2L4W6/372-469",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 468,
+                        "match_id": "3.30.70.330/FF/468",
+                        "hsps": [
+                            {
+                                "query_end": 140,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.24,
+                                "score": 45,
+                                "frac_conserved": 0.73,
+                                "length": 101,
+                                "evalue": 1.9e-13,
+                                "hit_start": 1,
+                                "query_start": 40,
+                                "rank": 1,
+                                "hit_end": 94
+                            }
+                        ],
+                        "rank": 35
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000612",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Glycine-rich RNA-binding protein 2",
+                        "significance": 6.9e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "20",
+                            "go_term_count": null,
+                            "rep_id": "Q9SVM8/29-157",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 612,
+                        "match_id": "3.30.70.330/FF/612",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 11.1,
+                                "frac_conserved": 0.79,
+                                "length": 28,
+                                "evalue": 0.0098,
+                                "hit_start": 46,
+                                "query_start": 8,
+                                "rank": 1,
+                                "hit_end": 73
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.39,
+                                "score": 35.5,
+                                "frac_conserved": 0.67,
+                                "length": 66,
+                                "evalue": 2.8e-10,
+                                "hit_start": 11,
+                                "query_start": 54,
+                                "rank": 2,
+                                "hit_end": 73
+                            }
+                        ],
+                        "rank": 36
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001471",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "",
+                        "significance": 7.5e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "4",
+                            "go_term_count": null,
+                            "rep_id": "Q9C652/1-89",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1471,
+                        "match_id": "3.30.70.330/FF/1471",
+                        "hsps": [
+                            {
+                                "query_end": 33,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.29,
+                                "score": 6.3,
+                                "frac_conserved": 0.67,
+                                "length": 24,
+                                "evalue": 0.27,
+                                "hit_start": 42,
+                                "query_start": 10,
+                                "rank": 1,
+                                "hit_end": 65
+                            },
+                            {
+                                "query_end": 117,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 39.2,
+                                "frac_conserved": 0.68,
+                                "length": 68,
+                                "evalue": 1.5e-11,
+                                "hit_start": 2,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 65
+                            }
+                        ],
+                        "rank": 37
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001229",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Os05g0376000 protein",
+                        "significance": 9e-10,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "6",
+                            "go_term_count": null,
+                            "rep_id": "A0A0P0WLK9/46-132",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1229,
+                        "match_id": "3.30.70.330/FF/1229",
+                        "hsps": [
+                            {
+                                "query_end": 37,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.23,
+                                "score": 11.5,
+                                "frac_conserved": 0.77,
+                                "length": 26,
+                                "evalue": 0.0062,
+                                "hit_start": 42,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 67
+                            },
+                            {
+                                "query_end": 117,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.3,
+                                "score": 33.9,
+                                "frac_conserved": 0.7,
+                                "length": 64,
+                                "evalue": 6.2e-10,
+                                "hit_start": 3,
+                                "query_start": 54,
+                                "rank": 2,
+                                "hit_end": 63
+                            }
+                        ],
+                        "rank": 38
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000049",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 1.1e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "474",
+                            "go_term_count": null,
+                            "rep_id": "P21187/174-264",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 49,
+                        "match_id": "3.30.70.330/FF/49",
+                        "hsps": [
+                            {
+                                "query_end": 36,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.26,
+                                "score": 7.4,
+                                "frac_conserved": 0.83,
+                                "length": 23,
+                                "evalue": 0.15,
+                                "hit_start": 52,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 74
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 38.5,
+                                "frac_conserved": 0.71,
+                                "length": 72,
+                                "evalue": 3e-11,
+                                "hit_start": 6,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 73
+                            }
+                        ],
+                        "rank": 39
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000247",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Multiple RNA-binding domain-containing protein 1",
+                        "significance": 1.2e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "117",
+                            "go_term_count": null,
+                            "rep_id": "Q06106/756-865",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 247,
+                        "match_id": "3.30.70.330/FF/247",
+                        "hsps": [
+                            {
+                                "query_end": 52,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 18.1,
+                                "frac_conserved": 0.78,
+                                "length": 46,
+                                "evalue": 5.3e-05,
+                                "hit_start": 43,
+                                "query_start": 10,
+                                "rank": 1,
+                                "hit_end": 88
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.3,
+                                "score": 28.3,
+                                "frac_conserved": 0.67,
+                                "length": 70,
+                                "evalue": 3.6e-08,
+                                "hit_start": 3,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 68
+                            }
+                        ],
+                        "rank": 40
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-002805",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "",
+                        "significance": 1.3e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1",
+                            "go_term_count": null,
+                            "rep_id": "H2RI57/3-97",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 2805,
+                        "match_id": "3.30.70.330/FF/2805",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.5,
+                                "score": 14.1,
+                                "frac_conserved": 0.67,
+                                "length": 24,
+                                "evalue": 0.0012,
+                                "hit_start": 67,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 90
+                            },
+                            {
+                                "query_end": 119,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.34,
+                                "score": 31.5,
+                                "frac_conserved": 0.59,
+                                "length": 76,
+                                "evalue": 4.4e-09,
+                                "hit_start": 21,
+                                "query_start": 44,
+                                "rank": 2,
+                                "hit_end": 90
+                            }
+                        ],
+                        "rank": 41
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-002154",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "",
+                        "significance": 1.5e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "2",
+                            "go_term_count": null,
+                            "rep_id": "Q55D63/104-194",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 2154,
+                        "match_id": "3.30.70.330/FF/2154",
+                        "hsps": [
+                            {
+                                "query_end": 38,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 11.3,
+                                "frac_conserved": 0.72,
+                                "length": 25,
+                                "evalue": 0.0074,
+                                "hit_start": 44,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 68
+                            },
+                            {
+                                "query_end": 141,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 33.4,
+                                "frac_conserved": 0.54,
+                                "length": 76,
+                                "evalue": 9.4e-10,
+                                "hit_start": 13,
+                                "query_start": 66,
+                                "rank": 2,
+                                "hit_end": 86
+                            }
+                        ],
+                        "rank": 42
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000364",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "heterogeneous nuclear ribonucleoprotein 1",
+                        "significance": 1.6e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "56",
+                            "go_term_count": null,
+                            "rep_id": "Q94AC3/1-82",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 364,
+                        "match_id": "3.30.70.330/FF/364",
+                        "hsps": [
+                            {
+                                "query_end": 33,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 7.6,
+                                "frac_conserved": 0.68,
+                                "length": 22,
+                                "evalue": 0.11,
+                                "hit_start": 42,
+                                "query_start": 12,
+                                "rank": 1,
+                                "hit_end": 63
+                            },
+                            {
+                                "query_end": 117,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.34,
+                                "score": 36.8,
+                                "frac_conserved": 0.66,
+                                "length": 62,
+                                "evalue": 8.5e-11,
+                                "hit_start": 5,
+                                "query_start": 56,
+                                "rank": 2,
+                                "hit_end": 63
+                            }
+                        ],
+                        "rank": 43
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000888",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Related to splicing factor HCC1",
+                        "significance": 1.6e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "12",
+                            "go_term_count": null,
+                            "rep_id": "A0A0D1E8D0/392-507",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 888,
+                        "match_id": "3.30.70.330/FF/888",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.38,
+                                "score": 6.3,
+                                "frac_conserved": 0.71,
+                                "length": 21,
+                                "evalue": 0.24,
+                                "hit_start": 61,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 81
+                            },
+                            {
+                                "query_end": 135,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 38.2,
+                                "frac_conserved": 0.64,
+                                "length": 85,
+                                "evalue": 2.9e-11,
+                                "hit_start": 17,
+                                "query_start": 51,
+                                "rank": 2,
+                                "hit_end": 96
+                            }
+                        ],
+                        "rank": 44
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000748",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA Binding Motif protein homolog",
+                        "significance": 1.9e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "15",
+                            "go_term_count": null,
+                            "rep_id": "O45713/1-85",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 748,
+                        "match_id": "3.30.70.330/FF/748",
+                        "hsps": [
+                            {
+                                "query_end": 35,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 12.7,
+                                "frac_conserved": 0.86,
+                                "length": 22,
+                                "evalue": 0.0026,
+                                "hit_start": 47,
+                                "query_start": 14,
+                                "rank": 1,
+                                "hit_end": 68
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.31,
+                                "score": 31.3,
+                                "frac_conserved": 0.69,
+                                "length": 67,
+                                "evalue": 4.3e-09,
+                                "hit_start": 4,
+                                "query_start": 52,
+                                "rank": 2,
+                                "hit_end": 67
+                            }
+                        ],
+                        "rank": 45
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001005",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Uncharacterized protein",
+                        "significance": 1.9e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "10",
+                            "go_term_count": null,
+                            "rep_id": "F4NW58/690-769",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1005,
+                        "match_id": "3.30.70.330/FF/1005",
+                        "hsps": [
+                            {
+                                "query_end": 38,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.25,
+                                "score": 9.8,
+                                "frac_conserved": 0.79,
+                                "length": 24,
+                                "evalue": 0.018,
+                                "hit_start": 49,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 72
+                            },
+                            {
+                                "query_end": 125,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.25,
+                                "score": 34.4,
+                                "frac_conserved": 0.7,
+                                "length": 76,
+                                "evalue": 3.7e-10,
+                                "hit_start": 4,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 75
+                            }
+                        ],
+                        "rank": 46
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000091",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Polyadenylate-binding protein",
+                        "significance": 2.4e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "340",
+                            "go_term_count": null,
+                            "rep_id": "Q9U302/298-404",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 91,
+                        "match_id": "3.30.70.330/FF/91",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 5.8,
+                                "frac_conserved": 0.73,
+                                "length": 22,
+                                "evalue": 0.46,
+                                "hit_start": 57,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 78
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.34,
+                                "score": 38.1,
+                                "frac_conserved": 0.63,
+                                "length": 71,
+                                "evalue": 4e-11,
+                                "hit_start": 13,
+                                "query_start": 48,
+                                "rank": 2,
+                                "hit_end": 78
+                            }
+                        ],
+                        "rank": 47
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000342",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Eukaryotic translation initiation factor 3 subunit G",
+                        "significance": 2.4e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "64",
+                            "go_term_count": null,
+                            "rep_id": "F4J6A1/201-321",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 342,
+                        "match_id": "3.30.70.330/FF/342",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.36,
+                                "score": 8.3,
+                                "frac_conserved": 0.77,
+                                "length": 22,
+                                "evalue": 0.066,
+                                "hit_start": 77,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 98
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.33,
+                                "score": 35.9,
+                                "frac_conserved": 0.65,
+                                "length": 69,
+                                "evalue": 1.8e-10,
+                                "hit_start": 33,
+                                "query_start": 50,
+                                "rank": 2,
+                                "hit_end": 98
+                            }
+                        ],
+                        "rank": 48
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-001138",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding (RRM/RBD/RNP motifs) family protein",
+                        "significance": 2.4e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "8",
+                            "go_term_count": null,
+                            "rep_id": "Q9LZT1/2-102",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 1138,
+                        "match_id": "3.30.70.330/FF/1138",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.45,
+                                "score": 10.6,
+                                "frac_conserved": 0.8,
+                                "length": 20,
+                                "evalue": 0.011,
+                                "hit_start": 48,
+                                "query_start": 15,
+                                "rank": 1,
+                                "hit_end": 67
+                            },
+                            {
+                                "query_end": 118,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.37,
+                                "score": 32.9,
+                                "frac_conserved": 0.68,
+                                "length": 65,
+                                "evalue": 1.1e-09,
+                                "hit_start": 6,
+                                "query_start": 54,
+                                "rank": 2,
+                                "hit_end": 67
+                            }
+                        ],
+                        "rank": 49
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000862",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding protein 1",
+                        "significance": 2.8e-09,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "12",
+                            "go_term_count": null,
+                            "rep_id": "Q84Z04/16-133",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 0,
+                        "match_funfam_number": 862,
+                        "match_id": "3.30.70.330/FF/862",
+                        "hsps": [
+                            {
+                                "query_end": 34,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.41,
+                                "score": 7.8,
+                                "frac_conserved": 0.73,
+                                "length": 22,
+                                "evalue": 0.11,
+                                "hit_start": 45,
+                                "query_start": 13,
+                                "rank": 1,
+                                "hit_end": 66
+                            },
+                            {
+                                "query_end": 117,
+                                "algorithm": "HMMSCAN",
+                                "frac_identical": 0.32,
+                                "score": 36.4,
+                                "frac_conserved": 0.65,
+                                "length": 65,
+                                "evalue": 1.5e-10,
+                                "hit_start": 4,
+                                "query_start": 53,
+                                "rank": 2,
+                                "hit_end": 65
+                            }
+                        ],
+                        "rank": 50
+                    }
+                ],
+                "query_id": "tr|G4VGF5|G4VGF5_SCHMA",
+                "query_description": "",
+                "query_length": 240
+            }
+        ]
+    },
+    "funfam_resolved_scan": {
+        "include_hsp_strings": "1",
+        "results": [
+            {
+                "query_name": "tr|G4VGF5|G4VGF5_SCHMA",
+                "hits": [
+                    {
+                        "match_name": "3.30.70.330-FF-000012",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "RNA-binding motif, single-stranded-interacting protein 3 isoform 1",
+                        "significance": 0.031,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "1132",
+                            "go_term_count": null,
+                            "rep_id": "1x4eA00",
+                            "ec_term_count": null,
+                            "rep_source_id": "cath"
+                        },
+                        "match_length": 49,
+                        "match_funfam_number": 12,
+                        "match_id": "3.30.70.330/FF/12",
+                        "hsps": [
+                            {
+                                "query_end": 52,
+                                "algorithm": "cath-resolve-hits",
+                                "length": 49,
+                                "evalue": 1.4e-06,
+                                "query_start": 4,
+                                "hit_start": 1,
+                                "score": 23,
+                                "rank": 1,
+                                "hit_end": 50
+                            }
+                        ],
+                        "rank": 1
+                    },
+                    {
+                        "match_name": "3.30.70.330-FF-000871",
+                        "match_cath_id": {
+                            "id": "3.30.70.330"
+                        },
+                        "match_description": "Sex lethal",
+                        "significance": 5.3e-07,
+                        "match_type": "funfam",
+                        "data": {
+                            "funfam_members": "12",
+                            "go_term_count": null,
+                            "rep_id": "E9GYI1/110-249",
+                            "ec_term_count": null,
+                            "rep_source_id": "uniprot"
+                        },
+                        "match_length": 126,
+                        "match_funfam_number": 871,
+                        "match_id": "3.30.70.330/FF/871",
+                        "hsps": [
+                            {
+                                "query_end": 178,
+                                "algorithm": "cath-resolve-hits",
+                                "length": 126,
+                                "evalue": 2.4e-11,
+                                "query_start": 53,
+                                "hit_start": 1,
+                                "score": 38.9,
+                                "rank": 1,
+                                "hit_end": 127
+                            }
+                        ],
+                        "rank": 2
+                    }
+                ],
+                "query_id": "tr|G4VGF5|G4VGF5_SCHMA",
+                "query_description": "",
+                "query_length": 240
+            }
+        ]
+    },
+    "cath_version": "4.3.0"
+}
